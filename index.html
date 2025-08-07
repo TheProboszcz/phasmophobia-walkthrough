@@ -10,35 +10,315 @@
     </style>
   </head>
   <body>
-    <header>
-      <a class="logo" href="#">logo</a>
-      <a class="link" href="#howtoplay">How to play</a>
-      <a class="link" href=".">Cursed objects</a>
-      <a class="link" href=".">Items</a>
-      <a class="link" href=".">Ghost type</a>
+    <header class="header">
+
+      <a class="logo" href="#">PHASMOPHOBIA walkthrough</a>
+
+      <div class="burger-menu">
+        <span> </span>
+      </div>
+
+      <nav class="main-nav">
+        <div class="nav-list">
+        <a class="link" href="#how2play">How to play</a>
+        <a class="link" href="#cursed">Cursed objects</a>
+        <a class="link" href="#items">Items</a>
+        <a class="link" href="#ghost_type">Ghost type</a>
+        </div>
+      </nav>
+
     </header>
     <main>
-      <article>
-        <b>How to play?</b>
-        <p>
+      <section id="how2play">
+        <h2 class="text-subtitle">How to play?</h2>
+        
           Phasmophobia is a 4 player online co-op psychological horror.
           Paranormal activity is on the rise and it’s up to you and your team to
           use all the ghost-hunting equipment at your disposal in order to
           gather as much evidence as you can.
         </p>
-      </article>
-      <article>
-        <b>Cursed Items</b>
+      </section>
+      <section id="cursed">
+        <h2 class="cursed-title">Cursed Objects</h2>
         <p>
           Cursed possessions are a group of seven powerful, supernatural items
-          that are used to directly interface with the ghost. They can make the
-          ghost appear or provide information, generally at the cost of sanity.
-          These items are the Music Box, Ouija Board, Voodoo Doll, Haunted
-          Mirror, Summoning Circle, Monkey Paw, and Tarot Cards. Activating or
-          using a cursed possession will immediately cancel the setup phase.
+          that are used to directly interface with the ghost. Using those items will help you identify the ghost type at the cost of your sanity.
+          Activating or using a cursed possession will immediately cancel the setup phase.
         </p>
-      </article>
-    </main>
-    <footer></footer>
+        
+        <ul class="cursed__list">
+
+          <li class="cursed__item">Music Box</li>
+          <article>
+           <img src="Music_box.webp" width="250" height="250" >
+            <p class="cursed__music"> When picked up, the music box will open (this does not mean it has been activated). The music box can then be activated using the Primary Use key. Doing so will end the setup phase early if it is ongoing. The music box cannot be activated during a hunt, and can only be used once.
+            Once activated, if the ghost is within 20 metres of the music box, it will sing along, broadcasting its current location while remaining invisible.
+            If the music box is within 5 metres of the ghost, it will trigger a ghost event where the ghost manifests and begins to walk towards the box. The music box can be handheld or placed on the floor, the latter being the only safe way to discard the box without triggering a cursed hunt before the ghost event.
+            In all cases, the box will close once it stops playing. </p>
+           </article>
+             
+          <li class="cursed__title">Ouija Board</li>
+          <article>
+           <img src="ouija.avif" style="width:250px;height:250px;"> 
+            <p class="cursed__text"> The Ouija Board can be activated by interacting with it if the player is not holding it, or toggling it directly while holding the board. The planchette will drop down onto the board, signifying that the board has been activated.
+               There is currently a bug where an ongoing setup phase will only be canceled if a valid phrase has been recognized and not upon activation of the board.</p>
+            </article>
+
+          <li class="cursed__item">Voodoo Doll</li>
+          <article>
+             <img src="voodoo.webp" width="250" height="250">
+            <p class="cursed__text"> Interacting with the voodoo doll will cause one of the 10 pins stuck in the doll to be pushed into it at random. 
+              This will cause the ghost to perform an interaction, and will drop the user's sanity by 5%. These forced interactions can include EMF Level 5 and Ultraviolet sources, but not the Ghost Writing Book.
+             If the heart pin is pushed in, the user's sanity will drain by 10%, and the ghost will initiate a cursed hunt.
+             If the user interacts with the voodoo doll while at 0% sanity, all remaining pins will be pushed in and a cursed hunt will also occur.</p>
+          </article>
+
+             <li class="cursed__title">Haunted Mirror</li>
+             <article>
+             <img src="mirror.png" width="250" height="250">
+            <p class="cursed__text"> When activated, the haunted mirror will show a view of the favorite room as a sweeping panorama from the center of the room, allowing players to locate the room by cross-reference.
+               This view is a live feed of the room, so any lights turned on, items moved, and equipment or players present in the room will be visible. 
+               The only exception is the player's own model.</p>
+              </article>
+
+          <li class="cursed__item">Summoning Circle</li>
+          <article> 
+           <img src="circle.png" width="250" height="250">
+           <p class="cursed__text"> Once all five candles are lit, the ghost is summoned and fully materialized, except a Shade, which has a chance of appearing as a transparent shadow. The summoned ghost stays motionless for 5 seconds, unable to kill players. This stationary period is considered a ghost event. 
+            However, the front door will lock immediately after lighting the last candle. After this event, the lights in the summoning circle's room will turn off and the ghost will immediately initiate a cursed hunt on the spot, without an additional 1-second grace period. 
+            Once the summoning circle is activated, it cannot be used again.</p>
+          </article>
+
+            <li class="cursed__title">Monkey Paw</li>
+           <article>
+           <img src="paw.png" width="250" height="250">
+           <p class="cursed__text"> The Monkey Paw can only be used within the investigation area, and players can choose to either use voice chat or a text-based UI to make wishes.
+            If using voice chat, the Monkey Paw will grant any recognized wish made by the player.
+            If using the text-based UI, the UI will appear upon pressing the Primary Use button. Players can then click to select one of 3 categories, then select a category-specific wish, or exit the UI by pressing the Primary Use button again.
+            Every wish will come with a negative side effect, with the severity depending on the wish. </p>
+           </article>
+        </ul>
+      </section>
+
+      <section id="items">
+        <h2>Items</h2>
+        <p> Equipment in Phasmophobia is used to determine the type of ghost inhabiting a location, or to complete optional objectives.
+           Players can purchase equipment using money they receive from successful investigations.</p>
+
+           <table class="items__table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Crucifix</td>
+                <td>Prevents the ghost from hunting in its vicinity.</td>
+              </tr>
+              <tr>
+                <td>Head gear</td>
+                <td>Can be equipped on a player's head. Will provide a video feed to the computer. Can be used to detect Ghost Orbs.</td>
+              </tr>
+              <tr>
+                <td>Incense</td>
+                <td>Used to prevent a ghost from hunting for a short period of time. Can also be used during a hunt to blind the ghost temporarily.</td>
+              </tr>
+              <tr>
+                <td>Parabolic Microphone</td>
+                <td>Detects sounds from a distance.</td>
+              </tr>
+              <tr>
+                <td>Sanity Meds</td>
+                <td>Restores the consumer's sanity by a certain amount dependent on difficulty.</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td>Places salt piles that ghosts can interact with to leave footprints.</td>
+              </tr>
+              <tr>
+                <td>Photo Camera</td>
+                <td>Takes pictures of ghosts for evidence that give you additional rewards.</td>
+              </tr>
+              <tr>
+                <td>Spirit Box</td>
+                <td>Used to communicate with the ghost.</td>
+              </tr>
+              <tr>
+                <td>Thermometer</td>
+                <td>Displays the local temperature of a room. Can be used to detect Freezing Temperatures.</td>
+              </tr>
+              <tr>
+                <td>UV Light</td>
+                <td>Used to detect fingerprints and other traces left by the ghost.</td>
+              </tr>
+              <tr>
+                <td>Video Camera</td>
+                <td>Creates a video feed, which is relayed to the truck's computer. Used to detect Ghost Orbs.</td>
+              </tr>
+              <tr>
+                <td>EMF Reader</td>
+                <td>Can detect EMF presence in the area. Used to obtain EMF Level 5 evidence.</td>
+              </tr>
+            </tbody>
+            </table>
+      </section>
+
+      <section id="ghost_type">
+        <h2 class="ghost-title">Ghost Types</h2>
+        <p>Each ghost has a set of unique characteristics, including personal identifiers, abilities, and evidences.
+           Players must investigate some of these aspects to correctly identify the ghost. The ghost can interact with its environment or perform ghost events, and even attempt to kill the player by initiating hunts.</p>
+           
+           <table class="ghost__table">
+          <thead>
+            <tr>
+              <th>Ghost Type</th>
+              <th>Strengths</th>
+              <th>Weaknesses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.Spirit</td>
+              <td>none</td>
+              <td>Incense is more effective and prevents hunts for a longer amount of time.</td>
+            </tr>
+            <tr>
+              <td>2.Wraith</td>
+              <td>Cannot be tracked by footsteps and tends to teleport to a random player.</td>
+              <td>Doesn't step on salt.</td>
+            </tr>
+            <tr>
+              <td>3.Phantom</td>
+              <td>Looking at a Phantom and hearing heartbeat sounds will drain the player's sanity, will occasionally walk to a random player.</td>
+              <td>Taking a photo causes it to disappear, less visible during a hunt.</td>
+            </tr>
+            <tr>
+              <td>4.Poltergeist</td>
+              <td>Throws multiple objects at once and can throw them at high velocities.</td>
+              <td>Becomes powerless with no throwables nearby.</td>
+            </tr>
+            <tr>
+              <td>5.Banshee</td>
+              <td>Will target only one player at a time and has increased chance of performing a singing ghost event.</td>
+              <td>Has distinctive wail.</td>
+            </tr>
+            <tr>
+              <td>6.Jinn</td>
+              <td>Travels at a faster speed if a distant player is in line of sight while the fuse box is on.
+Can occasionally drain large amounts of sanity from a nearby player.</td>
+              <td>Cannot use its ability if the fuse box is off.
+Will never turn the fuse box off directly.</td>
+            </tr>
+            <tr>
+              <td>7.Mare</td>
+              <td>Can hunt at a higher sanity in the dark.</td>
+              <td>Turning the lights on will reduce the chance of an attack.
+Will occasionally turn lights off right away.
+Will never turn a light on.</td>
+            </tr>
+            <tr>
+              <td>8.Revenant</td>
+              <td>Moves significantly faster if the player location is known during a hunt.</td>
+              <td>Moves very slowly when not chasing a player.</td>
+            </tr>
+            <tr>
+              <td>9.Shade</td>
+              <td>Less likely to perform interactions.</td>
+              <td>Cannot hunt if people are nearby.</td>
+            </tr>
+            <tr>
+              <td>10.Demon</td>
+              <td>Incense is less effective, preventing a hunt for less time.
+Can rarely initiate a hunt at any sanity level.</td>
+              <td>Crucifix range is 50% larger than placement range indicator.</td>
+            </tr>
+            <tr>
+              <td>11.Yurei</td>
+              <td>Can quickly drain sanity from nearby players.</td>
+              <td></td>
+            </tr>
+            <tr>  
+              <td>12.Oni</td>
+              <td>More likely to perform ghost events and can move objects at a faster speed.</td>
+              <td>Smudging the Yurei will temporarily trap it and reduce how often it wanders.
+Using its ability causes it to slam doors.</td>
+            </tr>
+            <tr>
+              <td>13.Yokai</td>
+              <td>Talking near the Yokai will anger it, increasing the chance to hunt.</td>
+              <td>Can only hear players within a short radius during a hunt.</td>
+            </tr>
+            <tr>
+              <td>14.Hantu</td>
+              <td>Lower temperatures allow the Hantu to move faster during hunts.</td>
+              <td>Warmer areas slow the Hantu's movement while hunting.
+Will produce freezing breath during a hunt if the fuse box is off.
+Will never turn the fuse box on.</td>
+            </tr>
+            <tr>
+              <td>15.Goryo</td>
+              <td>Can only enter a D.O.T.S. state when nobody is nearby.
+Its D.O.T.S. silhouette can only be seen through a Video Camera.</td>
+              <td>Cannot wander far from its room, or change favorite rooms.</td>
+            </tr>
+            <tr>
+              <td>16.Myling</td>
+              <td>Produces quieter sounds during a hunt.</td>
+              <td>Produces paranormal sounds more frequently on the Parabolic Microphone.</td>
+            </tr>
+            <tr>
+              <td>17.Onryo</td>
+              <td>A flame extinguishing can cause an Onryo to hunt regardless of average sanity.</td>
+              <td>A nearby lit flame will prevent the Onryo from hunting, just like a crucifix.</td>
+            </tr>
+            <tr>
+              <td>18.Twins</td>
+              <td>Either twin may start a hunt, though not at the same time.
+One twin is slow, the other is fast.</td>
+              <td>Will often interact with the environment at the same time but usually in different places.</td>
+            </tr>
+            <tr>
+              <td>19.Raiju</td>
+              <td>Moves faster near active electronic equipment.</td>
+              <td>Disrupts electronic equipment from further away when it hunts.</td>
+            </tr>
+            <tr>
+              <td>20.Obake</td>
+              <td>Has a chance to not leave fingerprints when interacting with things.
+May cause existing fingerprints to disappear sooner than usual.</td>
+              <td>Has a small chance of leaving special fingerprints.
+Can briefly shapeshift into another model during a hunt.</td>
+            </tr>
+            <tr>
+              <td>21.The Mimic</td>
+              <td>Can mimic the abilities and traits of other ghosts.</td>
+              <td>Will present fake Ghost Orbs as secondary evidence.</td>
+              <tr>
+              <td>22.Moroi</td>
+              <td>Moves noticeably faster at low average sanity.
+Can curse players, making them lose sanity quicker than usual while in the investigation zone.
+              <td>Incense blinds the ghost for 50% longer during hunts.
+              </tr>
+            <tr>
+              <td>23.Deogen</td>
+              <td>Always knows where the player is during a hunt and moves very quickly toward its victim.
+              <td>Moves extremely slowly once near its victim.
+            </tr>
+            <tr>
+              <td>24.Thaye</td>
+              <td>Much more active, aggressive and faster during hunts as soon as a player enters the location.</td>
+              <td>Becomes slower and less active over time when players are nearby.</td>
+          </tbody>
+        </table>
+      </section>
+   </main>
+
+    <footer>
+      <p class="footer-text">Made by Agata Mońka</p>
+      <p class="footer-text">Contact: <a href="mailto:agata.monka@example.com">agata.monka@example.com</a></p>
+    </footer>
+
   </body>
 </html>
